@@ -1,0 +1,46 @@
+package src;
+
+import java.awt.Color;
+import java.io.File;
+import java.util.*;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.sound.sampled.*;
+
+
+public class Main {
+	public static void main(String[] args) {
+		
+//		JFrame frame = new JFrame();
+//		frame.setTitle("Frame title");
+//		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//		frame.setResizable(false);
+//		frame.setSize(420,420);
+//		frame.setVisible(true);
+//		
+//		ImageIcon image = new ImageIcon("D:\\Courses\\Java Full Course\\JavaProject\\src\\pngegg.png");
+//		frame.setIconImage(image.getImage());
+		
+//		MyFrame frame = new MyFrame();
+		
+		
+		
+//		JPanel
+		
+		JPanel redPanel = new JPanel();
+		
+		redPanel.setBackground(Color.red);
+		
+		JFrame frame = new JFrame();
+		frame.add(redPanel);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setLayout(null);
+		frame.setSize(750,750);
+		frame.setVisible(true);
+		
+		
+	}
+}

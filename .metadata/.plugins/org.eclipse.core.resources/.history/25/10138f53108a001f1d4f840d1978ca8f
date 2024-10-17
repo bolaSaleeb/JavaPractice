@@ -1,0 +1,7 @@
+package src;
+
+import javax.swing.event.*;
+
+public class SliderDemo implements ChangeListener{
+
+}

@@ -1,0 +1,129 @@
+package src;
+
+import javax.swing.ImageIcon;
+import javax.swing.border.Border;
+
+import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
+
+public class MyFrame extends JFrame implements ActionListener{
+	
+	JButton button;
+	JLabel label;
+	
+	JMenu fileMenu;
+	JMenu editMenu;
+	JMenu helpMenu;
+	JMenuItem loadItem;
+	JMenuItem saveItem;
+	JMenuItem exitItem;
+	
+	MyFrame(){
+		
+//		Border border = BorderFactory.createLineBorder(Color.green);
+//		
+//		JLabel label = new JLabel();
+//		label.setText("Hello, this is a label");
+//		ImageIcon image2 = new ImageIcon("D:\\Courses\\Java Full Course\\JavaProject\\src\\pngegg.png");
+//		label.setIcon(image2);
+//		label.setHorizontalTextPosition(JLabel.CENTER);
+//		
+//		label.setBorder(border);
+//		
+//		
+//		this.setTitle("this title");
+//		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//		this.setResizable(false);
+//		this.setSize(1000,1000);
+//		this.add(label);
+//		
+//		this.setVisible(true);
+//		ImageIcon image = new ImageIcon("D:\\Courses\\Java Full Course\\JavaProject\\src\\pngegg.png");
+//		
+//		this.setIconImage(image.getImage());
+//		
+//		this.pack();
+		
+		
+//		JButton
+		
+//		ImageIcon icon = new ImageIcon("pngeeg.png");
+//		label = new JLabel();
+//		label.setText("label text");
+//		label.setIcon(icon);
+//		label.setBounds(150,250,150,150);
+//		label.setVisible(false);
+//		
+//		button = new JButton();
+//		button.setBounds(200,100,100,50);
+//		button.addActionListener(this);
+//		
+//		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//		this.setLayout(null);
+//		this.setSize(500,500);
+//		this.setVisible(true);
+//		this.add(button);
+//		this.add(label);
+		
+		
+//		MenuBar
+		
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setLayout(new FlowLayout());
+		this.setSize(500,500);
+		this.setVisible(true);
+		
+		JMenuBar menuBar = new JMenuBar();
+		JMenu fileMenu = new JMenu("File");
+		JMenu editMenu = new JMenu("Edit");
+		JMenu helpMenu = new JMenu("Help");
+		
+		loadItem = new JMenuItem("Load");
+		saveItem = new JMenuItem("Save");
+		exitItem = new JMenuItem("Exit");
+		
+		loadItem.addActionListener(this);
+		saveItem.addActionListener(this);
+		exitItem.addActionListener(this);
+		
+		fileMenu.add(loadItem);
+		fileMenu.add(saveItem);
+		fileMenu.add(exitItem);
+		
+		
+		menuBar.add(fileMenu);
+		menuBar.add(editMenu);
+		menuBar.add(helpMenu);
+		
+		
+		this.setJMenuBar(menuBar);
+		this.setVisible(true);
+		
+		
+		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+
+		
+//		if(e.getSource()==button) {
+//			System.out.println("button clicked");
+//			label.setVisible(true);
+//		}
+		
+//		Menu Bar
+		if(e.getSource()== load) {
+			System.out.println("button clicked");
+			label.setVisible(true);
+		}
+		
+		
+		
+	}
+}

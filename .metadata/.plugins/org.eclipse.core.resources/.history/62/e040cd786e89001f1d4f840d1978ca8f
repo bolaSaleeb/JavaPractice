@@ -1,0 +1,12 @@
+package src;
+
+import java.util.*;
+import javax.swing.JOptionPane;
+import javax.sound.sampled.*;
+
+
+public class Main {
+	public static void main(String[] args) {
+		File file = new File("sdfds.wav");
+	}
+}

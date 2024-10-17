@@ -1,0 +1,59 @@
+package src;
+
+import java.awt.Desktop.Action;
+import java.awt.event.ActionEvent;
+
+import javax.swing.AbstractAction;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Game {
+	
+	JFrame frame;
+	JLabel label;
+	Action upAction;
+	Action downAction;
+	Action leftAction;
+	Action rightAction;
+	
+	Game(){
+		
+		frame = new JFrame("Key Binding Demo");
+	}
+	
+	public class UpAction extends AbstractAction{
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
+			
+		}
+	}
+	
+	public class DownAction extends AbstractAction{
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
+			
+		}
+	}
+	
+	public class LeftAction extends AbstractAction{
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
+			
+		}
+	}
+	
+	public class RightAction extends AbstractAction{
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
+			
+		}
+	}
+}

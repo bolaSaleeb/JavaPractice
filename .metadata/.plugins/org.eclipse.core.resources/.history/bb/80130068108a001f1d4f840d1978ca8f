@@ -1,0 +1,25 @@
+package src;
+
+import javax.swing.*;
+import javax.swing.event.*;
+
+public class SliderDemo implements ChangeListener{
+	
+	
+	JFrame frame;
+	JPanel panel;
+	JLabel label;
+	JSlidr slider;
+	
+	
+	SliderDemo(){
+		
+	}
+
+	@Override
+	public void stateChanged(ChangeEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

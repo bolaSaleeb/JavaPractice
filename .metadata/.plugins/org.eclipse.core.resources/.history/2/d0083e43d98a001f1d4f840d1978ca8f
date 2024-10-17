@@ -1,0 +1,20 @@
+package rc;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+
+public class Main {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		
+		User user=null;
+		
+		FileInputStream fileIn = new FileInputStream("D:\\Courses\\Java Full Course\\Serializer\\UserInfo.ser");
+		ObjectInputStream in = new ObjectInputStream(fileIn);
+		
+
+	}
+
+}
